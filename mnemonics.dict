@@ -1,0 +1,114 @@
+#Arithmetic/logical  (a)
+#format   :opcode rd,rs,rt
+#register :3 
+#-------------------------
+add 3 a 000000 100000
+sub 3 a 000000 100010
+and 3 a 000000 100100
+or  3 a 000000 100101
+slt 3 a 000000 101010
+addu 3 a 000000 100001
+subu 3 a 000000 100011
+nor 3 a 000000 100111
+sltu 3 a 000000 101011
+xor 3 a 000000 100110
+
+
+
+
+#Shift Logical (s)
+#format   :opcode rd,rt,sa
+#register :3 
+#-------------------------
+sll 3 s 000000 000000
+sra 3 s 000000 000011
+srl 3 s 000000 000010
+
+
+
+
+#Shift Variable (v)
+#format   :opcode rd,rt,rs
+#register :3 
+#-------------------------
+sllv 3 v 000000 000100
+srav 3 v 000000 000111
+srlv 3 v 000000 000110
+
+
+
+
+#Arithmetic/logical (a)
+#format   :opcode rt,rs,imm
+#register :2
+#-------------------------
+addi 2 a 001000
+addiu 2 a 001001
+andi 2 a 001100
+ori 2 a 001101
+slti 2 a 001010
+sltiu 2 a 001011
+xori 2 a 001110
+
+
+
+
+#Branch (b)
+#format   :opcode rs,rt,offset
+#register :2 
+#-------------------------
+beq 2 b 000100
+bne 2 b 000101
+
+
+
+
+#Memory Load/store(ml/ms)
+#format   :opcode rt, offset(rs)
+#register :2
+#-------------------------
+lw 2 ml 100011
+sw 2 ml 101000
+lb 2 ml 100000
+lbu 2 ml 100100
+lh 2 ml 100001
+lhu 2 ml 100101
+sb 2 ms 101000
+sh 2 ms 101001
+
+
+
+
+#Branch (b)
+#format   :opcode rs,offset
+#register :1 
+#-------------------------
+bgez 1  b 000001 10001
+bgezal 1  b 000001 10001
+bgtz 1  b  000111 00000
+blez 1 b 000110 00000
+bltz 1 b 000001 00000
+bltzal 1 b 000001 10000
+
+
+
+
+#Jump (j)
+#format   :opcode rs
+#register :1 
+#-------------------------
+jr 1 j 000000 001000
+
+
+
+
+#Jump (j)
+#format   :opcode target
+#register :0 
+#-------------------------
+jal 0 j 000011
+j 0 j 000010
+
+#nop is all zero returned by the program itself
+
+
