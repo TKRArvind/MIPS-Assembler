@@ -1,0 +1,10 @@
+WARNING in line 10: Value s10 is neither a number nor represent any register in line -addi $s10, $zero, 8
+WARNING in line 12: {affi} in the asm =affi $s2, $R0  , 1= is not  found in dictionary, you can update in 'PNUMANICS.dict'
+WARNING in line 13: ' 1 $ZERO)' has a comma or paranthesis missing in asm -sw   $s1, 1 $ZERO)
+WARNING in line 16: -addi $s3, $s3-  is missing a parameters
+WARNING in line 17: Missing values or a comma between $registers in asm -beq
+WARNING in line 18: Missing values or a comma between $registers in asm -addu $S1 $s1  ,S2
+WARNING in line 19: -sw   $s1, 1($ZERO- is missing parameters or paranthesis
+WARNING in line 20: ' $s3   1' has a comma or paranthesis missing in asm -sub  $s3, $s3   1
+WARNING in line 22: @START is not found in the program
+Program encountered 9 warnings while translating

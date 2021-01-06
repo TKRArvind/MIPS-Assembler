@@ -1,0 +1,27 @@
+nop
+#-----------------------------------------------------------------#
+#	Program for displaying 'Fibonacci Sequence'               #
+#  $s3 holds iteration count : number of values to ba calcuated   #
+#  	$s1 & $s2 hold the actual computed values                 #
+#    assuming memory[1] is assigned for displaying values         #
+# 								  #
+#                       HAVE ERRORS				  #
+#-----------------------------------------------------------------#
+       addi $s10, $zero, 8    # no register is named s10  
+       addi $S1, $0   , 0     
+       affi $s2, $R0  , 1     # no mnemonic named affi
+       sw   $s1, 1 $ZERO)     # missing '(' before '$Zero'
+LOOP : addu $s2, S2   ,$S1    
+       sw   $s2, 1($ZERO)     
+       addi $s3, $s3  #,-1    # missing a parameters      
+       beq                    # missing values
+       addu $S1 $s1  ,S2      # missing , after first register
+       sw   $s1, 1($ZERO      # missing ')' after '$zero'
+       sub  $s3, $s3   1      # missing , after second register
+       bne  $s3, $ZERO,LOOP   
+       j START                # START tag is missing 
+#-----------------------------------------------------------------#
+#			   End of the program	                  #
+#-----------------------------------------------------------------#
+nop
+

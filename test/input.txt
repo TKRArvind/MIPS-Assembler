@@ -1,0 +1,27 @@
+nop
+#-----------------------------------------------------------------#
+#	Program for displaying 'Fibonacci Sequence'               #
+#  $s3 holds iteration count : number of values to ba calcuated   #
+#  	$s1 & $s2 hold the actual computed values                 #
+#    assuming memory[1] is assigned for displaying values         #
+#								  #
+#                    has no errors				  #
+#-----------------------------------------------------------------#
+START: addi $s3, $zero, 8     # s3 holds the number of iteration 
+       addi $S1, $0   , 0     # s1, s2 are two variable registers
+       addi $s2, $R0  , 1
+       sw   $s1, 1($ZERO)     # display $s1
+LOOP : addu $s2, S2   ,$S1
+       sw   $s2, 1($ZERO)     # display $s2
+       addi $s3, $s3  ,-1     # decrement the iteration count
+       beq  $s3, $ZERO,START  # if LOOP ends goto START
+       addu $S1, $s1  ,S2
+       sw   $s1, 1($ZERO)     # display $s1
+       sub  $s3, $s3  , 1     # decrement the iteration count
+       bne  $s3, $ZERO,LOOP   # if LOOP ends goto START else goto LOOP
+       j START
+#-----------------------------------------------------------------#
+#			   End of the program	                  #
+#-----------------------------------------------------------------#
+nop
+
