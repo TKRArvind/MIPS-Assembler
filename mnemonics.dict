@@ -1,3 +1,20 @@
+#========================== About ================================#
+#       This file holds the description about the mnemonics       #
+#                It has atleast 4 parameters                      # 
+#      1:pnemonics   2:register required    3:operation type      #
+#   4:opcode in instruction 5:function in instruction (optional)  #
+#                                                                 #
+#   This file is necessary as the code is independent of opcode   # 
+#   as well as mnemonics. This is not formatted with R/I/J type   #  
+#   beacause which each type the format can change                #
+#   for eg: 1) add rd,rs,rt                                       #
+#           2) sll rd,rt,sa                                       #
+#           3)sllv rd,rt,rs                                       #
+#                                                                 #
+#  These value for opcode/function can be changed as per our      #
+#       design format and will not affect the execution           #
+#=================================================================#
+
 #Arithmetic/logical  (a)
 #format   :opcode rd,rs,rt
 #register :3 
