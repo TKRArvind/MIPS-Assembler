@@ -7,7 +7,7 @@
 >  * customisable assembler for MIPS 
 
 
-# HIGHLIGHTS:
+# Highlights:
   1. It can understand "goto TAGS" written for offset and jump statements. The line is tagged by *\'\<tagname\> : \<asm\>\'*  
 ```
      eg: START: ..
