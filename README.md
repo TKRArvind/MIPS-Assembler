@@ -21,4 +21,6 @@
   `WARNING in line no. : @START is not found in the program `  \
       More such error and detection can be found in the test folder.
       
-  3. It can be customised to be used for machines using different opcodes, register, function values/bitwidth or different names for operations (mneumatics) as long as these are used for machines under MIPS family. The opcodes and other values can be changed in 'mneumatics.dict' and 'regNames.dict'.  This code needs these two files for reference as it is neither coupled with opcodes or mneumonics. The @input and @output paths/ bitwidths can be changed in the code under the section **PATH Variables and Constants Used**.
+  3. It can be customised to be used for machines using different opcodes, register, function values/bitwidth or different names for operations (mneumatics) as long as these are used for machines under MIPS family. The opcodes and other values can be changed in 'mneumonics.dict' and 'regNames.dict'.  This code needs these two files for reference as it is neither coupled with opcodes or mneumonics. The @input and @output paths/ bitwidths can be changed in the code under the section **PATH Variables and Constants Used**.
+  
+  4. Supported mneumonics can be seen in file named **mneumonics.dict**.
